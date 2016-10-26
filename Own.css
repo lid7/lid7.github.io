@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    
+}
+ 
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image:url("dii.jpg");
+    background-attachment: fixed;
+    background-size: stretch;
+    border: 1px solid plum;
+    outline: 5px dotted darkgray;
+
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    color: grey;
+}
+
+/* Classes */
+.box {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border: 1px dashed gray;
+    outline: 5px dashed rosybrown;
+}
+
+    
+
+
+.clearfix {
+    overflow: auto;
+}
+.column {
+    float: left;
+    position: relative;
+    width: 33.333%;
+    padding: 20px;
+}
+
+.flex-container{
+    display: flex;
+    padding: 20px;
+}
+
+.flex-column {
+    flex: 1;
+    padding: 20px
+}
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+/* ids */
+
+
+#MainMenu ul {
+    background-color: rosybrown;
+    padding: 20px;
+    margin: 20px;
+}
+
+#MainMenu li {
+    display: inline;
+    list-style-type: none;
+    }
+
+#MainMenu li a {
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+@media sceen and (max-width: 600px) {
+    .column {
+    
+    width: 100%;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+    
+}
+.order-1 {
+    order: 0;
+}
+
+.order-2 {
+    order: 1;
+}
+
+}
